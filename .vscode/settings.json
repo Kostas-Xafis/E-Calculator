@@ -1,0 +1,9 @@
+{
+	"files.associations": {
+		"cmath": "c",
+		"stdlib.h": "c",
+		"stdio.h": "c"
+	},
+	"C_Cpp.errorSquiggles": "Disabled",
+	"workbench.colorTheme": "1mm - Dracula"
+}
