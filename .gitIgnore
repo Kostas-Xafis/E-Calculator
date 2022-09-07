@@ -1,4 +1,5 @@
 **.txt
-!**/score.txt
+!C/scores.txt
 **.exe
-**/node_modules
+**/node_modules/
+./Js/fft/js

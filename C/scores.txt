@@ -1,0 +1,63 @@
+------------------------------------------10 Million digits---------------------------------
+3hours 30minutes +-10minutes| Singlethreaded | First simple implemtation
+1 Hour 54 Minutes| 4 Threads | First simple implemtation
+
+2 Minutes 02 Seconds | Singlethreaded | Split length: 2^12
+1 Minutes 15 Seconds | Singlethreaded | Split length: 2^16
+1 Minutes 15 Seconds | Singlethreaded | Split length: 2^16 
+1 Minutes 15 Seconds | Singlethreaded | Split length: 2^16 
+1 Minutes 05 Seconds | Singlethreaded | Split length: 2^15
+
+52 Seconds | Multithreaded + M Binary splitting | Split length: 2^16
+45 Seconds | Multithreaded + M Binary splitting | Split length: 2^15
+45 Seconds | Multithreaded + M Binary splitting | Split length: 2^15
+
+------------------------------------------100 Million digits--------------------------------
+43 Minutes 55 Seconds | Multithreaded + M Binary splitting  | Split length: 2^15 | 4 Threads
+40 Minutes 42 Seconds | Multithreaded + M Binary splitting  | Split length: 2^18 | 4 Threads
+33 Minutes 36 Seconds | Singlethreaded                      | Split length: 2^16 | 1 Threads
+27 Minutes 51 Seconds | Multithreaded + M Binary splitting  | Split length: 2^16 | 4 Threads
+23 Minutes 43 Seconds | Multithreaded + M Binary splitting  | Split length: 2^17 | 4 Threads
+22 Minutes 59 Seconds | Multithreaded + SM Binary splitting | Split length: 2^17 | 4 Threads
+
+
+====================New GCC compiler && Optimized GMP to current machine=====================
+Multithreaded Factorial
+SM:  Semi Multithreaded	 (CalculateE version 8)
+SM+: Semi Multithreaded+ (CalculateE version 9)
+FM:  Full Multithreaded  (CalculateE version 10 and up)
+
+------------------------------------ 1 Million digits ---------------------------------------
+484 Millis | Multithreaded + SM+ Binary splitting| Split length: 2^14 | 4-8 Threads
+
+-------------------------------------10 Million digits---------------------------------------
+13 Seconds | Multithreaded +  M  Binary splitting | Split length: 2^16
+9  Seconds | Multithreaded + SM+ Binary splitting | Split length: 2^16 | 4-8 Threads
+6  Seconds | Multithreaded + FM  Binary splitting | Split length: 2^16 | 8 Threads
+
+-------------------------------------100 Million digits--------------------------------------
+9 Minutes 53 Seconds | Multithreaded  +  M  Binary splitting | Split length: 2^16 | 4 Threads
+6 Minutes 10 Seconds | Multithreaded  + SM  Binary splitting | Split length: 2^17 | 4 Threads
+5 Minutes 24 Seconds | Multithreaded  + SM  Binary splitting | Split length: 2^17 | 8 Threads
+4 Minutes 30 Seconds | Multithreaded  + SM+ Binary splitting | Split length: 2^17 | 8 Threads
+    4:05 - 5:10      | Multithreaded  + FM  Binary splitting | Split length: 2^17 | 8 Threads
+3 Minutes 20 Seconds | Max multithread+ FM  Binary splitting | Split length: 2^17 | 8 Threads
+-------------------------------------220 Million digits--------------------------------------
+16 Minutes 30 Seconds| Multithreaded  + SM+ Binary splitting | Split length: 2^17 | 8 Threads
+13 Minutes 53 Seconds| Multithreaded  + FM  Binary splitting | Split length: 2^17 | 8 Threads
+
+-------------------------------------300 Million digits--------------------------------------
+25 Minutes 26 Seconds| Multithreaded   + FM Binary splitting | Split length: 2^18 | 8 Threads
+18 Minutes 43 Seconds| Max multithread + FM Binary splitting | Split length: 2^18 | 8 Threads
+
+-------------------------------------500 Million digits--------------------------------------
+45 Minutes 43 Seconds| Max multithread + FM Binary splitting | Split length: 2^18 | 8 Threads
+
+------------------------------------- 1 Billion digits --------------------------------------
+168 Minutes 38Seconds| Max multithread + FM Binary splitting | Split length: 2^18 | 8 Threads
+
+Make a search digits script in js with the digits from http://www.numberworld.org/digits/E/
+
+
+Best current function approximation (x^1.09φ)/(ln(xe^5)+e^2)
+Current setup: Ryzen 3500U Laptop 8GB Memory (-2GB for Windows)
